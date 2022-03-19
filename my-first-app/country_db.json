@@ -1,0 +1,87 @@
+{
+  "counntry": [
+    {
+      "id": 1,
+      "country_name": "India",
+      "ports": [
+        {
+          "id": 1,
+          "port_name": "iport1"
+        },
+        {
+          "id": 2,
+          "port_name": "iport2"
+        },
+        {
+          "id": 3,
+          "port_name": "iport3"
+        },
+        {
+          "id": 4,
+          "port_name": "iport4"
+        },
+        {
+          "id": 5,
+          "port_name": "iport5"
+        }
+      ]
+      
+      
+
+    },
+    {
+      "id": 2,
+      "country_name": "USA",
+      "ports": [
+        {
+          "id": 1,
+          "port_name": "usaport1"
+        },
+        {
+          "id": 2,
+          "port_name": "usaport2"
+        },
+        {
+          "id": 3,
+          "port_name": "usaport3"
+        },
+        {
+          "id": 4,
+          "port_name": "usaport4"
+        },
+        {
+          "id": 5,
+          "port_name": "usaport5"
+        }
+      ]
+
+    },
+    {
+      "id": 3,
+      "country_name": "UK",
+      "ports": [
+        {
+          "id": 1,
+          "port_name": "ukport1"
+        },
+        {
+          "id": 2,
+          "port_name": "ukport2"
+        },
+        {
+          "id": 3,
+          "port_name": "ukport3"
+        },
+        {
+          "id": 4,
+          "port_name": "ukport4"
+        },
+        {
+          "id": 5,
+          "port_name": "ukport5"
+        }
+      ]
+    }
+  ]
+
+}

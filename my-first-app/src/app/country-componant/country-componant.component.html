@@ -1,0 +1,40 @@
+<div id="nav"></div>
+<div class="about-container" *ngIf="!isChildVisible">
+    <div class="contact">
+        <img src="https://cdn-media-1.freecodecamp.org/images/1*k8n7Jx9UaLRAxum9HMp8nQ.png" class="contact-image">
+        <div class="contact-text">
+            <h1>Port Management</h1>
+            <div class="contact-form" >
+                
+                <div class="contact-1">
+                    <span>From :</span>
+                    <select [(ngModel)]="selectedCountryFrom" (click)="showFromCountryPorts()" class="country">
+                        <option value="">Select Country</option>
+                        <option *ngFor="let d of data">{{ d.country_name }}</option>
+                    </select>
+                    <select class="port" [(ngModel)]="selectedFromPort" [disabled]="!selectedCountryFrom">
+                        <option>Select Ports</option>
+                        <option *ngFor="let d of FromPorts" >{{d}}</option>
+                    </select>
+                    <input type="date" name="fromDate" value="2022-11-21" [(ngModel)]="fromDate"><br>
+
+                    <span>To :</span>
+                    <select [(ngModel)]="selectedCountryTo" (click)="showToCountryPorts()" class="country" [disabled]="!selectedCountryFrom">
+                        <option value="">Select Country</option>
+                        <option *ngFor="let d of toCountry" >{{ d }}</option>
+                    </select>
+                    <select class="port" [(ngModel)]="selectedToPort" [disabled]="!selectedCountryTo">
+                        <option>Select Ports</option>
+                        <option *ngFor="let d of ToPorts" >{{d}}</option>
+                    </select>
+                    <input type="date" name="toDate" [(ngModel)]="toDate"  [disabled]="!fromDate" [min]="fromDate"><br><br>
+                    <button class="btn btn-danger" (click)="onSubmit()">Submit</button>
+                </div>
+               
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-port-detail [portDetail]="portDetail" *ngIf="isChildVisible"></app-port-detail>

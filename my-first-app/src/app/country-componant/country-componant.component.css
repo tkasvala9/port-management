@@ -1,0 +1,178 @@
+
+.countryport{
+    float: left;
+}
+select,input{
+    margin: 2em;
+    padding: 10px;
+    background-color: #9cc3d5ff;
+    border-bottom: 3px solid white;
+    font-weight: bolder;
+    font-size: larger;
+    cursor: pointer;
+    
+}
+select:disabled{
+    cursor: auto;
+}
+span{
+    color :white;
+    font-weight: bolder;
+    font-size: xx-large;
+    margin-right: 2em;
+}
+
+ 
+.about-container{
+    
+    display: block;
+    position: relative;
+   
+    
+
+}
+.about{
+    margin: 10em 10em;
+    display: flex;
+    background-color: cornsilk;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 5em;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 20px 30px -20px;
+   
+
+}
+.about-text{
+    padding: 1em 5em;
+    
+    font-size: larger;
+}
+.about-text h1{
+
+    text-align: center;
+    color: cornflowerblue;
+    text-decoration: underline;
+    font-size: 2.5em;
+
+}
+.image{
+    float: right;
+    background-color: white;
+}
+.about-image{
+    margin: 2em 5em;
+    height: 25em;
+    width: 11em;
+}
+
+
+
+.contact{
+    display: block;
+    overflow: auto;
+    /* padding: 1em; */
+    background: linear-gradient(110deg,rgb(61, 61, 153) 40%, rgb(109, 109, 189) 60%);
+    position: relative;
+    height: 800px;
+    
+}
+
+.contact-image{
+    float: left;
+    height: 500px;
+    width: 35%;
+    margin: 4em;
+    margin-top: 150px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.contact-text{
+    margin: 2em;
+    
+}
+.contact-text h1{
+    text-align: center;
+    font-size: 4em;
+    color: black;
+    margin-top: 100px;
+}
+.contact-form{
+    position: absolute;
+    /* margin-bottom: 270px;
+    margin-left: 150px; */
+    bottom: 15em;
+    right: 0em;
+    padding: 1em;
+    margin-right: 25px;
+    /* padding: 2em 8em 3em 4em; */
+    border: 3px solid black;
+    
+}
+.contact-1,.contact-2{
+    display: inline-block;
+    /* float: left; */
+}
+
+.contact-title{
+    font-size: x-large;
+    margin-top: 2em;
+}
+.contact-detail{
+    font-size: larger;
+    
+}
+.input{
+    /* margin: 1.5em; */
+    font-size: larger;
+    background: transparent;
+    border-style: none;
+    border-bottom: 3px solid black;
+    font-weight: bold;
+    text-decoration: none;
+    width: 90%;
+    
+}
+
+.submit{
+    font-size: x-large;
+    border-style: none;
+    padding: 0.5em 2em;
+    cursor: pointer;
+    margin: 1em 1.5em 0em 1.5em;
+    background-color: black;
+    color: white;
+    border-radius: 1em;
+}
+
+@media screen and (max-width:1125px) {
+    .about{
+        margin: 7em 0em;
+    }
+    .about-text{
+        padding: 1em 2em;
+        font-size: large;
+    }
+    .contact-image{
+        float: none;
+        width: 80%;
+        overflow: hidden;
+        margin:2em;
+    }
+    .contact-form{
+        position: relative;
+        border: 3px solid black;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .about{
+       flex-wrap: wrap;
+    }
+    .image{float: left;}
+    .about-text{font-size: medium;}
+    
+}
+
+@media screen and (max-width:1330px) {
+    .contact-form{padding: 2em ;}
+}
