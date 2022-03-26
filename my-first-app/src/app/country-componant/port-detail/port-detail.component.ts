@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-port-detail',
@@ -9,9 +9,14 @@ export class PortDetailComponent implements OnInit {
 
   @Input() portDetail:any;
 
+  @Output() isChild!:boolean;
+  
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  sendChild(){
+
+  }
 }

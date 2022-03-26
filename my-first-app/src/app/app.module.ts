@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { LoginComponantComponent } from './login-componant/login-componant.component';
 import { CountryComponantComponent } from './country-componant/country-componant.component';
 import { PortDetailComponent } from './country-componant/port-detail/port-detail.component';
+import { PortsRecordComponent } from './ports-record/ports-record.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { PortDetailComponent } from './country-componant/port-detail/port-detail
     AppComponent,
     LoginComponantComponent,
     CountryComponantComponent,
-    PortDetailComponent
+    PortDetailComponent,
+    PortsRecordComponent
   ],
   imports: [
     BrowserModule,

@@ -29,6 +29,7 @@
                     </select>
                     <input type="date" name="toDate" [(ngModel)]="toDate"  [disabled]="!fromDate" [min]="fromDate"><br><br>
                     <button class="btn btn-danger" (click)="onSubmit()">Submit</button>
+                    <button class="btn btn-danger" (click)="sendToPort()">Port Record</button>
                 </div>
                
 
@@ -37,4 +38,4 @@
     </div>
 </div>
 
-<app-port-detail [portDetail]="portDetail" *ngIf="isChildVisible"></app-port-detail>
+<app-port-detail [portDetail]="portDetail" *ngIf="isChildVisible" ></app-port-detail>

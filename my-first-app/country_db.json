@@ -25,9 +25,6 @@
           "port_name": "iport5"
         }
       ]
-      
-      
-
     },
     {
       "id": 2,
@@ -54,7 +51,6 @@
           "port_name": "usaport5"
         }
       ]
-
     },
     {
       "id": 3,
@@ -82,6 +78,70 @@
         }
       ]
     }
+  ],
+  "port": [
+    {
+      "selectedCountryFrom": "USA",
+      "selectedCountryTo": "India",
+      "selectedFromPort": "usaport2",
+      "selectedToPort": "iport2",
+      "fromDate": "2022-03-29",
+      "toDate": "2022-04-01",
+      "id": 1
+    },
+    {
+      "selectedCountryFrom": "India",
+      "selectedCountryTo": "USA",
+      "selectedFromPort": "iport5",
+      "selectedToPort": "usaport2",
+      "fromDate": "2022-03-11",
+      "toDate": "2022-03-31",
+      "id": 900
+    },
+    {
+      "selectedCountryFrom": "India",
+      "selectedCountryTo": "USA",
+      "selectedFromPort": "iport2",
+      "selectedToPort": "usaport2",
+      "fromDate": "2022-03-31",
+      "toDate": "2022-04-08",
+      "id": 721
+    },
+    {
+      "selectedCountryFrom": "USA",
+      "selectedCountryTo": "UK",
+      "selectedFromPort": "usaport1",
+      "selectedToPort": "ukport3",
+      "fromDate": "2022-03-03",
+      "toDate": "2022-03-31",
+      "id": 567
+    },
+    {
+      "selectedCountryFrom": "India",
+      "selectedCountryTo": "USA",
+      "selectedFromPort": "iport2",
+      "selectedToPort": "usaport3",
+      "fromDate": "2022-04-07",
+      "toDate": "2022-04-29",
+      "id": 270
+    },
+    {
+      "selectedCountryFrom": "USA",
+      "selectedCountryTo": "UK",
+      "selectedFromPort": "usaport2",
+      "selectedToPort": "ukport1",
+      "fromDate": "2022-03-30",
+      "toDate": "2022-04-07",
+      "id": 673
+    },
+    {
+      "selectedCountryFrom": "USA",
+      "selectedCountryTo": "India",
+      "selectedFromPort": "usaport2",
+      "selectedToPort": "iport2",
+      "fromDate": "2022-03-24",
+      "toDate": "2022-03-30",
+      "id": 300
+    }
   ]
-
 }

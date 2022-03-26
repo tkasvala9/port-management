@@ -11,8 +11,11 @@ export class PortInformationServiceService {
   getdata(){
     return this.ht.get("http://localhost:3000/counntry");
   }
-  // sendPost(data:any){
-  //   return this.ht.post("http://localhost:3000/counntry",data);
-  // }
+  getPortdata(){
+    return this.ht.get("http://localhost:3000/port");
+  }
+  sendPost(data:any){
+    return this.ht.post("http://localhost:3000/port",data);
+  }
   
 }

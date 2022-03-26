@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { PortInformationServiceService } from '../port-information-service.service';
 
 @Component({
@@ -15,6 +16,7 @@ export class CountryComponantComponent implements OnInit {
   selectedToPort!: "",
   fromDate:"",
   toDate : "",
+  id : 0
   }
 
   data: any;
@@ -31,8 +33,11 @@ export class CountryComponantComponent implements OnInit {
   toDate!:string;
 
   constructor(
-    private portService: PortInformationServiceService
-  ) { }
+    private portService: PortInformationServiceService,
+    private router :Router
+  ) {
+    this.isChildVisible=false;
+   }
 
   ngOnInit(): void {
     this.portService.getdata().subscribe(data => {
@@ -71,6 +76,8 @@ export class CountryComponantComponent implements OnInit {
     }
   }
 
+
+
   onSubmit(){
     if (this.selectedToPort && this.toDate) {
       this.portDetail.selectedCountryFrom =this.selectedCountryFrom;
@@ -79,7 +86,19 @@ export class CountryComponantComponent implements OnInit {
       this.portDetail.selectedToPort =  this.selectedToPort;
       this.portDetail.fromDate = this.fromDate;
       this.portDetail.toDate =  this.toDate;
+      this.portDetail.id = Math.floor((Math.random()*1000))
+     
       this.isChildVisible = true;
+
+      this.portService.sendPost(this.portDetail).subscribe(
+        res => {
+          console.log(res)
+        }
+      )
     }
+  }
+
+  sendToPort(){
+    this.router.navigate(['/port'])
   }
 }

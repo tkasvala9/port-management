@@ -121,6 +121,9 @@ span{
     font-size: larger;
     
 }
+button{
+    margin-right: 2em;
+}
 .input{
     /* margin: 1.5em; */
     font-size: larger;
